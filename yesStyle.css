@@ -35,7 +35,7 @@ body {
 .second_text {
     background-color: white;
     width: 500px;
-    height: 70px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
