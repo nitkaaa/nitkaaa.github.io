@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>I love youu</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./yesStyle.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text" >
+            <h1 class = "header_text">Пипы, вы будете моими валентинками</h1>
+        </div>
+        <div class="gif_container">
+            <img src="wee.gif" alt="Cute animated illustration">
+        </div>
+        <div class = "buttons">
+            <button class="btn" id = "yesButton" onclick="nextPage()">Да</button>
+            <button class="btn" id="noButton" onmouseover="moveButton()">Нет</button>
+            <script>
+                function nextPage() {
+                    window.location.href = "yes.html";
+                }
+
+                function moveButton() {
+                    let x = Math.random() * (window.innerWidth - document.getElementById('noButton').offsetWidth);
+                    let y = Math.random() * (window.innerHeight - document.getElementById('noButton').offsetHeight);
+                    document.getElementById('noButton').style.left = `${x}px`;
+                    document.getElementById('noButton').style.top = `${y}px`;
+                }
+            </script>
+        </div>
+    </div>
+
+</body>
+</html>
